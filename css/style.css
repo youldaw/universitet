@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap');
+
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	font-family: "Inter", sans-serif;
+}
+* {
+	transition: .3s all ease;
+}
+a, p, h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+    text-decoration: none;
+    line-height: 1.2;
+}
+button:focus,
+textarea:focus,
+select:focus{
+	outline: none!important;
+	box-shadow: none;
+}
+input:focus{
+	outline: none!important;
+}
+a:active, a:focus {
+  outline: 0;
+  outline: none!important;
+  -moz-outline-style: none;
+}
+
+span, button, img, a {
+	transition: .3s all ease;
+}
+
+a, span, button {
+	display: inline-block;
+}
+
+.wrapper {
+	overflow: hidden;
+	min-height: 100vh;
+	background-color: #f8f8f8;
+}
+
+
+
+.header-top_social {
+	position: fixed;
+	left: 0;
+	top: 40%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	z-index: 100;
+}
+.header-top_social a {
+	background: rgb(51, 51, 51, .5);
+	height: 45px;
+	width: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 10px 15px;
+}
+.header-top_social a:first-child {
+	border-top-right-radius: 20px;
+}
+.header-top_social a:last-child {
+	border-bottom-right-radius: 20px;
+}
+.header-top_social a span {
+	width: 0;
+	opacity: 0;
+	font-family: "Geist Mono", monospace;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.2;
+	color: #fff;
+}
+.header-top_social a:hover span {
+	width: 100%;
+	opacity: 1;
+	margin-right: 10px;
+}
+.header-top_social a:hover {
+	width: auto;
+	background-color: #039be5;
+}
+.header-top_social a img {
+	height: 40px;
+}
+.header-top_social a svg {
+	font-size: 20px;
+	color: #fff;
+}
+
+
+
+
+header .header-top {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px 0;
+}
+.logo-link {
+	display: flex;
+	align-items: center;
+	gap: 0 10px;
+}
+.logo-link img {
+	height: 64px;
+}
+.logo-link span {
+	font-family: 'Canela Text Trial Regular';
+	font-size: 18px;
+	line-height: 1.2;
+	max-width: 200px;
+	color: #333;
+}
+
+
+.header-top_contact {
+	display: flex;
+	align-items: center;
+	gap: 0 10px;
+}
+.fa-music,
+.fa-eye,
+.fa-sitemap,
+.fa-globe {
+	color: #039be5;
+}
+.header-top_contact a {
+	color: #333;
+}
+.header-top_contact a:hover {
+	font-size: 16px;
+}
+.header-top .space-line {
+	color: #aaacb2;
+}
+
+.header-top_symbol {
+	display: flex;
+	align-items: center;
+	gap: 0 10px;
+}
+.header-top_social a img,
+.header-top_symbol a img {
+	height: 20px;
+}
+.header-top_social a img {
+	mix-blend-mode: darken;
+}
+.header-top_special {
+	display: flex;
+	align-items: center;
+	gap: 0 10px;
+}
+header .dropdown-toggle {
+	border: none;
+	background: transparent;
+	padding: 0;
+}
+.dropdown-toggle::after {
+	content: none;
+}
+header .drop-lang {
+	display: flex;
+	align-items: center;
+	gap: 0 6px;
+}
+header .drop-lang span {
+	font-size: 16px;
+	line-height: 1.2;
+	color: #333;
+}
+header .drop-special {
+	display: flex;
+	align-items: center;
+	gap: 0 8px;
+}
+header .drop-special .fa-angle-down {
+	font-size: 12px;
+}
+
+
+.navbar-con {
+	transition: .4s all ease;
+}
+.navbar-nav {
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	padding: 10px 0;
+}
+
+.navbar .nav-item .nav-link {
+	padding: 0;
+	font-size: 15px;
+	font-weight: 600;
+	color: #333;
+}
+.navbar-con.sticky {
+	position: fixed;
+	width: 100%;
+	left: 0;
+	top: 0;
+	z-index: 100;
+	background: #fff;
+	box-shadow: 0 0 10px rgba(0,0,0, .6);
+}
+
+
+/* main */
+.main-slide {
+	position: relative;
+	border-radius: 50px;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	margin: 30px 0 0;
+	height: 760px;
+}
+.main-block .main-bg {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	z-index: 2;
+}
+.main-block::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 6;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: rgb(255, 255, 255);
+}
+
+
+.links-sec {
+	padding: 60px 0;
+}
+.links-sec .links-block {
+	display: flex;
+	align-items: flex-start;
+	gap: 24px;
+}
+.links-block .links-item {
+	min-height: 200px;
+	height: 100%;
+	background-color: #fff;
+	border-radius: 16px;
+	padding: 24px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	gap: 30px 0;
+}
+.links-block .links-item svg {
+	font-size: 60px;
+}
+.links-block .links-item span {
+	font-size: 20px;
+	line-height: 1.3;
+	color: #333;
+}
+
+
+.header2 {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+	/* background: #fff; */
+}
+.wrapper2 .main-slide2 {
+	height: 100vh;
+	border-radius: 0;
+	margin: 0;
+}
+.wrapper2 .main-block {
+	height: 100%;
+}
+.wrapper2 .main-sec {
+	background: rgba(0, 0, 0, 0.5);
+}
+.wrapper2 .main-block::after {
+	background: rgba(0, 0, 0, 0.6);
+}
+.wrapper2 .main-in {
+	position: relative;
+	z-index: 10;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+}
+.wrapper2 .main-logo {
+	height: 200px;
+}
+.wrapper2 .main-title {
+	font-size: 80px;
+	color: #fff;
+	font-family: 'Canela Text Trial Regular';
+	max-width: 800px;
+	text-align: center;
+	margin-top: 100px;
+}
+.header2 .fa-angle-down,
+.header2 .drop-lang span {
+	color: #fff;
+}
+.header2.sticky {
+	background-color: #f8f8f8;
+}
+.header2.sticky .fa-angle-down,
+.header2.sticky .drop-lang span {
+	color: #3333;
+}
+.header2.sticky .logo-link span,
+.header2.sticky .navbar .nav-item .nav-link {
+	color: #333;
+}
+.header2.sticky .fa-angle-down,
+.header2.sticky .fa-music,
+.header2.sticky .fa-eye,
+.header2.sticky .fa-sitemap,
+.header2.sticky .fa-globe {
+	color: #039be5;
+}
+.header2.sticky .navbar,
+.header2.sticky .header2-top {
+	padding: 5px 0;
+}
+.header2 {
+	transition: .3s all ease;
+}
+.header2.sticky .logo-link img {
+	height: 50px;
+}
+.header2.sticky .logo-link span {
+	max-width: 100%;
+}
+.header2 .logo-link span,
+.header2 .navbar .nav-item .nav-link {
+	color: #fff;
+}
+.header2 .fa-music,
+.header2 .fa-eye,
+.header2 .fa-sitemap,
+.header2 .fa-globe {
+	color: #fff;
+}
+.header2.sticky .drop-lang span {
+	color: #333;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 1400px){
+	.container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+		max-width: 80%;
+	}
+}
+
+
+
